@@ -1,11 +1,13 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"path/filepath"
 
 	"github.com/arsharaj/project-logger/config"
+	"github.com/arsharaj/project-logger/parser"
 	"github.com/arsharaj/project-logger/tailer"
 )
 
@@ -24,8 +26,10 @@ func main() {
 	for _, file := range cfg.LogFiles {
 		go func(filePath string) {
 			err := tailer.TailFile(filePath, func(line string) {
-				// Temporary handler - later this will parse and send to elasticsearch
-				fmt.Printf("[log from %s] %s\n", filePath, line)
+				entry := parser.ParseSyslogLine(line, filePath)
+
+				jsonEntry, _ := json.Marshal(entry)
+				fmt.Println(string(jsonEntry))
 			})
 
 			if err != nil {
