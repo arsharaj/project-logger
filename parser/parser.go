@@ -26,7 +26,7 @@ func ParseSyslogLine(line, source string) LogEntry {
 
 	if len(matches) >= 4 {
 		// Parse timestamp without year - add current year
-		parsedTime, err := time.Parse("Jan 5 15:05:05", matches[1])
+		parsedTime, err := time.Parse("Jan 2 15:04:05", matches[1])
 		if err == nil {
 			ts = parsedTime
 			// Adjust year to current
