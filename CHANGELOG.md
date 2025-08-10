@@ -46,9 +46,9 @@ To keep this changelog up to date, please follow these guidelines when making ch
 
 ---
 
-### [0.1.0] : YYYY-MM-DD
+### [0.1.0] : 2025-08-10
 
 #### Added
-- First draft of the project with basic functionality
+- First release of the project with basic functionalities.
 
 ---

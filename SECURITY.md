@@ -8,15 +8,13 @@ The security of all actively supported versions of this project is maintained as
 
 | Version   | Supported          |
 |-----------|--------------------|
-| Latest    | :white_check_mark: |
-| Previous  | :white_check_mark: |
-| Older     | :x:                |
+| v0.1.0    | :white_check_mark: |
 
 ### Reporting a Vulnerability
 
 If you discover a security vulnerability in this project, please follow the steps below :
 
-1. **Contact Us** : Send an email to [security@example.com](mailto:security@example.com).
+1. **Contact Us** : Send an email to [arsharaj.chauhan@outlook.com](mailto:arsharaj.chauhan@outlook.com).
    
 2. **Provide Details** : When reporting a vulnerability, please include :
    - A clear description of the vulnerability.

@@ -2,44 +2,36 @@
 
 > Module to parse system logs
 
-Badges (if required)
-
 ### Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Configuration Management
+- Log File Tailing
+- Parsing Logs
+- Elasticsearch Integration
+- Unit Testing
 
 ### Requirements
 
-- Requirement 1
-- Requirement 2
-- Requirement 3
-
-### Installation
-
-1. Step 1
-2. Step 2
-3. Step 3
+- go : 1.24.4
 
 ### Usage
 
-1. Command 1
-2. Command 2
-3. Command 3
-
-### Website
-
-Website Screenshot
+1. Run application : `go run ./cmd`
+2. Clean go dependencies : `go mod tidy`
 
 ### Folder Structure
 
 ```
 root
-├─── .github
-├─── docs
-├─── src
-└─── tests
+├── .github
+├── cmd
+├── config
+├── docs
+├── elk
+├── internal
+├── parser
+├── tailer
+└── test
 ```
 
 ### Documentation
@@ -48,7 +40,7 @@ Full documentation can be found in [docs](docs/) folder.
 
 ### Running Tests
 
-Run the following command to execute the test suite : `command to run tests`
+Run the following command to execute the test suite : `go test ./test`
 
 ### Contributing
 
